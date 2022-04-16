@@ -1,0 +1,38 @@
+{
+  "name": "yukibotapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "types": "types/global.d.ts",
+  "scripts": {
+    "test": "npm run lint && npm run types && node test/system.js",
+    "types": "tsc",
+    "lint": "eslint . && prettier -c \"**/*.js\" \"**/*.json\" \"**/*.md\" \"**/*.yml\" \"**/*.ts\"",
+    "fmt": "prettier --write \"**/*.js\" \"**/*.json\" \"**/*.md\" \"**/*.yml\" \"**/*.ts\"",
+    "db": "metasql c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nieopierzony/YukiBotAPI.git"
+  },
+  "keywords": [
+    "metarhia",
+    "impress",
+    "discord",
+    "bot",
+    "api"
+  ],
+  "author": "Philipp Zelinski (philipp.zelinski@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nieopierzony/YukiBotAPI/issues"
+  },
+  "homepage": "https://github.com/nieopierzony/YukiBotAPI#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "impress": "^2.6.9",
+    "metasql": "^2.0.3",
+    "pg": "^8.7.3",
+    "redis": "^4.0.6"
+  }
+}
